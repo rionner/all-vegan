@@ -1,0 +1,35 @@
+// === TEXT ELEMENTS ===
+// === === === === === === === === === ===
+// @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+// @mixin lato-font {
+//   font-family: 'Lato', Helvetica, Arial, sans-serif;a
+// }
+
+@import url(https://fonts.googleapis.com/css?family=Cousine:400,700&display=swap);
+
+@mixin cousine-font{
+	font-family: 'Cousine', monospace;
+}
+
+@mixin primary-font {
+	@include cousine-font;
+}
+
+@mixin light-weight {
+  font-weight: 400;
+}
+@mixin standard-weight {
+  font-weight: 400;
+}
+@mixin bold-weight {
+  font-weight: 700;
+}
+@mixin italic-text {
+  font-style: italic;
+}
+@mixin custom-typography($size: null, $line: null, $spacing: null) {
+  font-size: $size;
+  line-height: $line;
+  letter-spacing: $spacing;
+}
+

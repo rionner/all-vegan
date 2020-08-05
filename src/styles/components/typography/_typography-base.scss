@@ -1,0 +1,70 @@
+// === === TYPOGRAPHY === ===
+// === === === === === === ===
+// TITLES
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  @include primary-font;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  @include text-color($title-text);
+}
+h1, .h1 {
+  @include bold-weight;
+  @include custom-typography(48px, null, .5px);
+}
+h2, .h2 {
+  @include bold-weight;
+  @include custom-typography(38px, null, .5px);
+}
+h3, .h3 {
+  @include bold-weight;
+  @include custom-typography(32px, null, .8px);
+}
+h4, .h4 {
+  @include bold-weight;
+  @include custom-typography(24px, null, .3px);
+}
+h5, .h5 {
+  @include bold-weight;
+  @include custom-typography(16px, null, .5px);
+}
+h6, .h6 {
+  @include standard-weight;
+  @include custom-typography(16px, null, null);
+  text-transform: uppercase;
+}
+
+// BODY TEXT STYLES
+p, span, .p {
+  @include primary-font;
+}
+
+// LINKS
+a {
+  @include primary-font;
+  @include inline-hover-transition($title-text, $link-hover);
+  text-decoration: none;
+}
+
+// HTML5 AND OTHER ELEMENTS
+ol, ul, li, label, address, figcaption, blockquote, strong, em, strike, .label, .address, .figcaption, .blockquote, .strong, .em, .strike {
+  @include primary-font;
+}
+ol, ul {
+  >li {
+    padding-left: $tiny;
+  }
+}
+label {
+  @include light-weight;
+  @include custom-typography(12px, null, .2px);
+}
+ol {}
+ul {}
+li {}
+label, .label {}
+address, .address {}
+figcaption, .figcaption {}
+blockquote, .blockquote {}
+strong, .strong {}
+em, .em {}
+strike, .strike {}
